@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Município de Setúbal - Página Inicial</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS externo -->
+    <style> /* CSS interno específico: layout grid para duas colunas */
+        main {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\costa\Documents\Escola\RC\Site com CSS\root\imagens\logotipo.webp" alt="Logotipo do Município de Setúbal">
+        <h1>Bem-vindo ao Município de Setúbal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="historia.html">História de Setúbal</a></li>
+            <li><a href="turismo.html">Turismo e Pontos de Interesse</a></li>
+            <li><a href="gastronomia.html">Gastronomia e Tradições</a></li>
+            <li><a href="contactos.html">Contactos / Informações ao Visitante</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Descobrir Setúbal</h2>
+            <p>Setúbal, localizada na região do Alentejo Litoral, é uma cidade rica em história, natureza e cultura. Rodeada pelo rio Sado e pela Serra da Arrábida, oferece uma combinação única de tradições marinheiras e paisagens deslumbrantes.</p>
+            <img src="C:\Users\costa\Documents\Escola\RC\Site com CSS\root\imagens\vista do rio.jpg">
+        </section>
+        <section>
+            <h2>Sugestões para Visitantes</h2>
+            <p>Explore o centro histórico, visite os mercados de peixe ou relaxe nas praias da Arrábida. Setúbal é ideal para quem aprecia gastronomia local e atividades ao ar livre.</p>
+            <p style="color: #4A90E2; font-weight: bold; font-size: 1.1em;">Dica: Visite durante o verão para aproveitar o clima ameno!</p> <!-- CSS em linha: azul do Rio Sado -->
+            <img src="C:\Users\costa\Documents\Escola\RC\Site com CSS\root\imagens\centro hisorico.jpg">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Município de Setúbal. <a href="hhttps://www.mun-setubal.pt/home/" target="_blank">Site Oficial</a> | <a href="https://www.visitportugal.com/pt-pt/content/setubal" target="_blank">Turismo de Portugal</a></p>
+    </footer>
+</body>
+</html>
