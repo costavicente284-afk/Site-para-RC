@@ -1,0 +1,154 @@
+/* style.css - CSS externo comum a todas as páginas, atualizado para design moderno */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); /* Tipografia moderna e leve */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Fundo branco limpo */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Layout flexível para altura total */
+}
+
+header {
+    background: linear-gradient(135deg, #B3D9FF 0%, #4A90E2 100%); /* Gradiente azul do Rio Sado */
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra moderna */
+    border-radius: 0 0 20px 20px; /* Bordas arredondadas */
+}
+
+header img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%; /* Logo circular para modernidade */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    color: #FFFFFF; /* Branco para contraste */
+    font-size: 2.8em;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Sombra no texto */
+}
+
+nav {
+    background: linear-gradient(135deg, #007BFF 0%, #4A90E2 100%); /* Gradiente azul intenso */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 25px; /* Botões arredondados */
+    transition: all 0.3s ease; /* Animação suave */
+    background-color: rgba(255,255,255,0.1); /* Fundo semi-transparente */
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+    color: #007BFF;
+    transform: translateY(-2px); /* Efeito de elevação */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    flex-grow: 1; /* Ocupa espaço restante */
+}
+
+section {
+    background-color: #F8F9FA; /* Fundo claro para cards */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Efeito hover nos cards */
+}
+
+h2 {
+    color: #007BFF; /* Azul do Rio Sado */
+    border-bottom: 3px solid #4A90E2;
+    padding-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: linear-gradient(135deg, #B3D9FF 0%, #4A90E2 100%); /* Gradiente azul */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Fixa no fundo */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #007BFF;
+}
+
+/* Responsividade moderna */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+}
+
+
